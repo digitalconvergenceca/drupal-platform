@@ -8,7 +8,7 @@
     "drupal/admin_toolbar": "^2.0",
     "drupal/core-composer-scaffold": "*",
     "drupal/core-recommended": "^9.1",
-    "drush/drush": "^9.7",
+    "drush/drush": "^10.3",
     "oomphinc/composer-installers-extender": "^1.1 || ^2"
   },
   "require-dev": {
