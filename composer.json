@@ -67,7 +67,7 @@
     "patches": {
       "drupal/core": {
         "[subprofile support] 1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2020-12-03/1356276-91x-626.patch",
-        "[subprofile support] 2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
+        "[subprofile support] 2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2019-10-22/2914389-14-do-not-test.patch"
       }
     }
   },
