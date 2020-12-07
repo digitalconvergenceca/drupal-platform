@@ -1,0 +1,89 @@
+{
+  "name": "digitalconvergenceca/drupal-platform",
+  "type": "drupal-profile",
+  "description": "",
+  "license": "GPL-2.0-or-later",
+  "require": {
+    "cweagans/composer-patches": "^1.6.0",
+    "drupal/admin_toolbar": "^2.0",
+    "drupal/core-composer-scaffold": "*",
+    "drupal/core-recommended": "^9.0",
+    "oomphinc/composer-installers-extender": "^1.1 || ^2"
+  },
+  "require-dev": { },
+  "config": {
+    "process-timeout": 0
+  },
+  "extra": {
+    "composer-exit-on-patch-failure": true,
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "docroot/"
+      },
+      "file-mapping": {
+        "[project-root]/.gitattributes": false,
+        "[project-root]/.editorconfig": false,
+        "[web-root]/example.gitignore": false,
+        "[web-root]/.csslintrc": false,
+        "[web-root]/modules/README.txt": false,
+        "[web-root]/profiles/README.txt": false,
+        "[web-root]/sites/README.txt": false,
+        "[web-root]/themes/README.txt": false,
+        "[web-root]/INSTALL.txt": false,
+        "[web-root]/robots.txt": false,
+        "[web-root]/web.config": false
+      }
+    },
+    "enable-patching": true,
+    "installer-paths": {
+      "docroot/core": [
+        "type:drupal-core"
+      ],
+      "docroot/libraries/{$name}": [
+        "type:drupal-library",
+        "type:bower-asset",
+        "type:npm-asset"
+      ],
+      "docroot/modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "docroot/profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "docroot/themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ],
+      "drush/contrib/{$name}": [
+        "type:drupal-drush"
+      ]
+    },
+    "installer-types": [
+      "bower-asset",
+      "npm-asset"
+    ],
+    "patchLevel": {
+      "drupal/core": "-p2"
+    },
+    "patches": {
+      "drupal/core": {
+        "[subprofile support] 1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2020-03-24/1356276-531-9.0.x-9.patch",
+        "[subprofile support] 2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
+      }
+    }
+  },
+  "repositories": {
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    "assets": {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+
+  }
+}
