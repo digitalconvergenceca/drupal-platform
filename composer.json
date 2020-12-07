@@ -7,7 +7,7 @@
     "cweagans/composer-patches": "^1.6.0",
     "drupal/admin_toolbar": "^2.0",
     "drupal/core-composer-scaffold": "*",
-    "drupal/core-recommended": "^9.0",
+    "drupal/core-recommended": "^9.1",
     "oomphinc/composer-installers-extender": "^1.1 || ^2"
   },
   "require-dev": { },
@@ -66,7 +66,7 @@
     },
     "patches": {
       "drupal/core": {
-        "[subprofile support] 1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2020-03-24/1356276-531-9.0.x-9.patch",
+        "[subprofile support] 1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2020-12-03/1356276-91x-626.patch",
         "[subprofile support] 2914389 - Allow profiles to exclude dependencies of their parent": "https://www.drupal.org/files/issues/2018-07-09/2914389-8-do-not-test.patch"
       }
     }
