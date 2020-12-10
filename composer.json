@@ -12,7 +12,7 @@
     "oomphinc/composer-installers-extender": "^1.1 || ^2"
   },
   "require-dev": {
-    "drupal/core-dev": "^9.1"
+    "drupal/core-dev": "^8.9"
   },
   "config": {
     "process-timeout": 0
