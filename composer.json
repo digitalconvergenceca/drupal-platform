@@ -74,7 +74,7 @@
     },
     "patches": {
       "drupal/core": {
-        "[subprofile support] 1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2020-12-03/1356276-91x-626.patch"
+        "[subprofile support] 1356276 - Allow profiles to define a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2019-12-27/1356276-88x-603.patch"
       }
     }
   },
